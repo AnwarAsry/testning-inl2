@@ -10,85 +10,23 @@ describe("Testing sort", () => {
 
         const sortList = movieSort(movies)
 
-        expect(sortList).toStrictEqual([{
-            Title: "Breach",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          },{
-            Title: "Chamber",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          },{
-            Title: "Neon",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          },{
-            Title: "Sova",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          },{
-            Title: "Sova",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          },{
-            Title: "Xavier",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-        }])
+        expect(sortList[0].Title).toBe("Astra")
+        expect(sortList[1].Title).toBe("Breach")
+        expect(sortList[2].Title).toBe("Neon")
+        expect(sortList[3].Title).toBe("Sova")
+        expect(sortList[4].Title).toBe("Sova")
+        expect(sortList[5].Title).toBe("Xavier")
     })
     test("sort by title desc false", async () => {
         const movies: IMovie[] = await getData()
 
         const sortList = movieSort(movies, false)
 
-        expect(sortList).toStrictEqual([{
-            Title: "Xavier",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          },{
-            Title: "Sova",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          },{
-            Title: "Sova",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          },{
-            Title: "Neon",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          },{
-            Title: "Chamber",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          },{
-            Title: "Breach",
-            imdbID: "string",
-            Type: "string",
-            Poster: "string",
-            Year: "string"
-          }])
+        expect(sortList[0].Title).toBe("Xavier")
+        expect(sortList[1].Title).toBe("Sova")
+        expect(sortList[2].Title).toBe("Sova")
+        expect(sortList[3].Title).toBe("Neon")
+        expect(sortList[4].Title).toBe("Breach")
+        expect(sortList[5].Title).toBe("Astra")
     })
 })

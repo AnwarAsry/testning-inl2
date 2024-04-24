@@ -1,13 +1,19 @@
 import { IMovie } from "../../models/Movie"
 
 const movies: IMovie[] = [{
-    Title: "Chamber",
+    Title: "Neon",
     imdbID: "string",
     Type: "string",
     Poster: "string",
     Year: "string"
   },{
     Title: "Xavier",
+    imdbID: "string",
+    Type: "string",
+    Poster: "string",
+    Year: "string"
+  },{
+    Title: "Sova",
     imdbID: "string",
     Type: "string",
     Poster: "string",
@@ -25,13 +31,7 @@ const movies: IMovie[] = [{
     Poster: "string",
     Year: "string"
   },{
-    Title: "Neon",
-    imdbID: "string",
-    Type: "string",
-    Poster: "string",
-    Year: "string"
-  },{
-    Title: "Sova",
+    Title: "Astra",
     imdbID: "string",
     Type: "string",
     Poster: "string",
