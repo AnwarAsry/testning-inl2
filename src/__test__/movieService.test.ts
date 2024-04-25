@@ -6,7 +6,7 @@ import axios from "axios"
 // jest.mock("axios")
 
 describe("MovieApp", () => {
-    test("Axios.get", async () => {
+    test("Axios hämtar data", async () => {
         const searchText = "star";
         let movies: IMovie[] = [];
 
@@ -37,7 +37,7 @@ describe("MovieApp", () => {
         
         expect(movies).toHaveLength(2)
     })
-    test("Axios kaboom", async () => {
+    test("Axios kunde inte hämta data", async () => {
         const searchText = "star";
         let movies: IMovie[] = [];
         
